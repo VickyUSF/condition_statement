@@ -1,0 +1,39 @@
+namespace Assignment_Conditional
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Console.WriteLine("Please enter expected grade : ");
+            int grade = int.Parse(Console.ReadLine());
+
+            if ((grade >= 90) && (grade <= 100))
+            {
+                Console.WriteLine("Your letter grade is A");
+            }
+            else if ((grade >= 80) && (grade < 90))
+            {
+                Console.WriteLine("Your letter grade is B");
+            }
+            else if ((grade >= 70) && (grade < 80))
+            {
+                Console.WriteLine("Your letter grade is C");
+            }
+            else if ((grade >= 60) && (grade < 70))
+            {
+                Console.WriteLine("Your letter grade is D");
+            }
+            else if ((grade >= 0) && (grade < 60))
+            {
+                Console.WriteLine("Your letter grade is F");
+            }
+            else
+            {
+                Console.WriteLine("Please enter an integer between 0-100");
+            }
+
+        }
+    } 
+} 
